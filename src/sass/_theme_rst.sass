@@ -18,7 +18,7 @@
 		font-size: 2.6rem
 		line-height: 1.2
 		letter-spacing: -0.02em
-		margin-top: 6.4rem
+		margin-top: 4.9rem
 		margin-bottom: $space-m + 0.18rem
 		font-weight: calc(700 * var(--font-weight-factor))
 		color: $headline
@@ -39,10 +39,10 @@
 		margin-bottom: $margin-rst !important
 		font-weight: calc(620 * var(--font-weight-factor))
 		color: $headline
-		&:after 
+		&:after
 			border: none !important
 
-	ul.search li a 
+	ul.search li a
 		display: inline-block
 		margin: 1rem 0 0.75rem 0 !important
 	h4
@@ -71,7 +71,7 @@
 
 	.large p > a, .document li a, .document p a, .document dt a, footer a:not([class])
 		position: relative
-		color: $link-color	
+		color: $link-color
 		font-weight: calc(580 * var(--font-weight-factor))
 		text-decoration: none
 		&:visited
@@ -80,7 +80,7 @@
 			text-decoration: none
 			&:after
 				opacity: 0.8
-		&:after 
+		&:after
 			content: ''
 			position: absolute
 			left: 0
@@ -174,9 +174,9 @@
 		font-family: $code-font-family
 		font-size: 12px
 		line-height: 1.4
-	
+
 	// Do not allow selection of code block prompts
-	div.highlight .gp 
+	div.highlight .gp
 		user-select: none
 		pointer-events: none
 
@@ -261,7 +261,7 @@
 			margin-bottom: 1rem
 	// Simple lists, no item margins
 	.section ul, .section ol, .wy-plain-list-decimal
-		margin-bottom: $margin-rst 
+		margin-bottom: $margin-rst
 		> li
 			margin-left: 2rem
 			padding-left: 0.3rem
@@ -309,7 +309,7 @@
 			&:after
 				content: '\f0c1'
 				font-family: FontAwesome
-				
+
 		&:hover .headerlink:after
 			visibility: visible
 			color: $muted !important
@@ -402,10 +402,10 @@
 				padding: 0
 				> p, > ul
 					margin: 0
-					> li 
+					> li
 						margin-left: 1.2rem
 						padding-left: 0
-				code 
+				code
 					padding: 0
 		dl.footnote
 			font-size: .9rem
@@ -420,7 +420,7 @@
 						content: '['
 					&:after
 						content: ']'
-					> a 
+					> a
 						text-decoration: none
 				> span.fn-backref
 					font-style: italic
@@ -468,7 +468,7 @@
 					margin-bottom: 0rem
 					font-size: .9rem
 					white-space: normal
-			
+
 		// Remove bottom margin for the last element (and it's last child)
 		td .last, td .last > *:last-child
 			margin-bottom: 0
@@ -550,9 +550,9 @@
 			line-height: 1.6
 			background: $info-bg
 			color: $info-text
-			& * 
+			& *
 				color: inherit
-	
+
 		// In the html4 writer, parameters is a table. In html5 writer, parameters
 		// is a nested dl.field-list
 		dl:not(.field-list) > dt
@@ -629,6 +629,6 @@
 		.sidebar
 			width: 100%
 
-+media(new-breakpoint(max-width $nav-media-query 12)) 
++media(new-breakpoint(max-width $nav-media-query 12))
 	html:not(.landing) h1, #search-results h2
 		margin-top: $space-m !important

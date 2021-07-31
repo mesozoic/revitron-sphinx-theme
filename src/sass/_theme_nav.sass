@@ -1,7 +1,7 @@
 .wy-menu
 	a:hover
 		text-decoration: none
-	
+
 .wy-menu-vertical
 	width: $nav-desktop-width
 	padding-top: $space-m - 0.275rem
@@ -17,8 +17,8 @@
 		font-weight: calc(700 * var(--font-weight-factor))
 	& > :first-child
 		margin-top: 0 !important
-		
-	li.current 
+
+	li.current
 		background-color: $bg-nav-current-list !important
 
 	li
@@ -49,7 +49,7 @@
 			box-shadow: 1px 0 0 $bg-nav-current
 			*
 				background-color: inherit !important
-		
+
 	// On state for the first level
 	li.on a, li.current > a
 		color: $nav-color
@@ -101,7 +101,7 @@
 				> a
 					@extend %toctree_link_color
 					padding-left: $gutter * ((($toc_level - 1) * 0.5) + 1)
-				
+
 				a:hover span.toctree-expand
 					color: inherit
 		@if $toc_level > 2 and $toc_level < 5
@@ -131,7 +131,7 @@
 		&:active
 			background-color: $bg-nav-hover
 			cursor: pointer
-			
+
 .wy-side-nav-search
 	display: block
 	width: $nav-desktop-width
@@ -143,10 +143,11 @@
 	text-align: left
 	color: $nav-search-color
 
-	input[type="text"] 
+	input[type="text"]
 		display: block
-		width: 90%
+		width: 100%
 		position: relative
+		transition: color 100ms;
 		border: 2px solid $border-search
 		background-color: transparent !important
 		-webkit-appearance: none !important
@@ -158,39 +159,46 @@
 		font-size: inherit
 		color: $text
 		border-radius: 100px
+		&::placeholder
+			color: $muted;
+		&:-ms-input-placeholder
+			color: $muted;
+		&::-ms-input-placeholder
+			color: $muted;
+
 		&:focus
 			border-color: $text
-			&::placeholder 
+			&::placeholder
 				color: transparent;
-			&:-ms-input-placeholder  
+			&:-ms-input-placeholder
 				color: transparent;
-			&::-ms-input-placeholder 
+			&::-ms-input-placeholder
 				color: transparent;
 
-	::placeholder 
+	::placeholder
 		color: $nav-search-color;
-	
-	:-ms-input-placeholder  
+
+	:-ms-input-placeholder
 		color: $nav-search-color;
-	
-	::-ms-input-placeholder 
+
+	::-ms-input-placeholder
 		color: $nav-search-color;
 
 	.brand
-		min-height: 9.5rem
-		height: 9.5rem
-		max-height: 9.5rem
-		> a	
+		min-height: 8.0rem
+		height: 8.0rem
+		max-height: 8.0rem
+		> a
 			color: $text
 			font-size: 100%
 			font-weight: calc(700 * var(--font-weight-factor))
 			display: inline-block
 			padding: 0
 			padding-top: 5px
-			+font-smooth	
+			+font-smooth
 			img.logo
 				display: block  // display on its own line all the time
-				margin: 0 
+				margin: 0
 				padding: 0
 				height: 4.25rem !important
 				max-height: 4.25rem
