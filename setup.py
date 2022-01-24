@@ -85,7 +85,7 @@ class TransifexCommand(distutils.cmd.Command):
 
 setup(
     name='revitron_sphinx_theme',
-    version='0.7.1',
+    version='0.7.2',
     url='https://github.com/revitron/revitron-sphinx-theme/',
     license='MIT',
     author='Marc Anton Dahmen, Dave Snider, Read the Docs, Inc. & contributors',
